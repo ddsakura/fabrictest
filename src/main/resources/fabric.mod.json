@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "ftest1",
+  "version": "${version}",
+  "name": "Ftest1",
+  "description": "desc",
+  "authors": [
+    "author"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/ftest1/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "fabrictest.ftest1.client.Ftest1Client"
+    ],
+    "main": [
+      "fabrictest.ftest1.Ftest1"
+    ]
+  },
+  "mixins": [
+    "ftest1.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.9",
+    "fabric": "*",
+    "minecraft": "1.19.2"
+  }
+}
